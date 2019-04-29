@@ -1,1 +1,66 @@
 /* TODO(you): Write the CSS to finish the assignment! */
+:root {
+    --grid-size: 100%;
+    --margin-size: 25px;
+    --grid-height: calc((var(--grid-size)) - var(--margin-size));
+  }
+.choice-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.choice-grid div {
+    width: 32.5%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    border: 1px;
+    border: thick;
+    border-color: #dcdcdc;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.choice-grid img {
+    width: var(--grid-size);
+    height: var(--grid-height);
+}
+
+#resultArea {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#test_result {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background-color: #cecece;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+section.hidden {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    article {
+        width: 95%;
+    }
+    
+    header div {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .choice-grid div {
+        width: 49%;
+    }
+}
