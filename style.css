@@ -32,6 +32,10 @@
     padding: 20px;
 }
 
+#resultArea #title {
+    margin: 0px;
+}
+
 #test_result {
     margin-top: 18px;
     margin-bottom: 18px;
