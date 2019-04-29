@@ -12,6 +12,9 @@ const MATCH_LIST = {
 
 function transformTextNodes(node) {
   // TODO(you): Implement this function! See HW spec for details.
+  if(node.nodeName === 'SCRIPT' || node.nodeName === 'STYLE') {
+      return;
+  }
   if(node.nodeType === Node.TEXT_NODE) {
     //cut to words
     let word = node.textContent.split(' ');
